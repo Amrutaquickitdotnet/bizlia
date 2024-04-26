@@ -1,0 +1,13 @@
+com\bizlia\Stepdefinations\HomeSteps.class
+com\bizlia\pages\SignUpPage.class
+com\bizlia\common\CommonActions.class
+com\bizlia\pages\LoginPage.class
+com\bizlia\pages\DataBaseConnectorPage.class
+com\bizlia\Stepdefinations\BaseTest.class
+com\bizlia\pages\HomePage.class
+com\bizlia\runner\TestRunner.class
+com\bizilia\captcha\CaptchaSolver.class
+com\bizilia\captcha\FastCaptchaResponse.class
+com\bizlia\Stepdefinations\Common.class
+com\bizlia\Stepdefinations\LoginSteps.class
+com\bizlia\Stepdefinations\SignUpSteps.class
