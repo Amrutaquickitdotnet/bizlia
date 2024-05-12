@@ -158,7 +158,7 @@ public static String tagName="";
 		Date d = new Date();
 		DateFormat ft = new SimpleDateFormat("ddMMyyyyhhmmss");
 		String fileName = ft.format(d);
-		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/src/test/java/com/cdm/reports/ExtentReport"+fileName+".html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/src/test/java/com/bizliareports/reports/ExtentReport"+fileName+".html");
     	// Create an object of Extent Reports
 		extent = new ExtentReports();  
 		extent.attachReporter(htmlReporter);
@@ -180,7 +180,7 @@ public static String tagName="";
 		String fileName = ft.format(d);
 		EmailAttachment attachment = new EmailAttachment();
 
-        attachment.setPath(System.getProperty("user.dir") + "/src/test/java/com/cdm/reports/ExtentReport"+fileName+".html");
+        attachment.setPath(System.getProperty("user.dir") + "/src/test/java/com/bizliareports/reports/ExtentReport"+fileName+".html");
 
         attachment.setDisposition(EmailAttachment.ATTACHMENT);
         attachment.setDescription(" Test Execution Report");

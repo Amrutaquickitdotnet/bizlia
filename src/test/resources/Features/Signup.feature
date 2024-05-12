@@ -2,7 +2,7 @@
 Feature: SIGNUP
 
 @Test
-Scenario: TC01_Verification of Browser Compatibility of Home Page of the application
+Scenario: TC01_Verification of Signup functionality of bizlia
 Given User launch application in chrome browser
 Then click on signup button           
 Given I am on the signup page

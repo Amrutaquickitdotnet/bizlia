@@ -91,7 +91,7 @@ public class SignUpPage extends CommonActions {
 	}
 
 	public void selectPhoneCountryCode(String countrycode) {
-		setDropDownElementByVisibleText(phonedropdown, countrycode);
+		setDropDownElementByVisibleText(phonedropdown, countrycode,"Entering country code");
 	}
 
 	public void scrollingvertical() {

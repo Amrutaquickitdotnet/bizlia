@@ -22,49 +22,51 @@ public class CompanyProfileSteps extends BaseTest {
 	@Then("enter the name in the field of doing business as")
 	public void enter_the_name_in_the_field_of_doing_business_as() {
 		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
-		
+		companysettings.doingBusinessAs(alldata.get(vTCName).get("Doing Business As").toString());
 	}
 
 	@Then("enter the name in the field of former company Name\\(s)")
 	public void enter_the_name_in_the_field_of_former_company_name_s() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
+		companysettings.formercompanyname(alldata.get(vTCName).get("Former Company Name(s)").toString());
 	}
 
 	@Then("enter the value in the field of Federal Tax ID")
 	public void enter_the_value_in_the_field_of_federal_tax_id() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
+		companysettings.federalTaxId(alldata.get(vTCName).get("Federal Tax ID").toString());
 	}
 
 	@Then("choose State Incorporated dropdown")
 	public void choose_state_incorporated_dropdown() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
+		companysettings.selectStateIncorporate(alldata.get(vTCName).get("State Incorporated").toString());
+	
 	}
 
 	@Then("enter the value for Website Address")
 	public void enter_the_value_for_website_address() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
+		companysettings.websiteAddress(alldata.get(vTCName).get("Website Address").toString());
 	}
 
 	@Then("enter the value for Type of Industry")
 	public void enter_the_value_for_type_of_industry() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
+		companysettings.selectTypeOfIndustry(alldata.get(vTCName).get("Type of Industry").toString());
 	}
 
 	@Then("enter the value for How did you hear about us?")
 	public void enter_the_value_for_how_did_you_hear_about_us() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
+		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
+		companysettings.howDidYouHearAboutUs(alldata.get(vTCName).get("How did you hear about us?").toString());
 	}
-
+   
 	@Then("Click on save button to save General Information values")
-	public void click_on_save_button_to_save_general_information_values() {
-		// Write code here that turns the phrase above into concrete actions
-		throw new io.cucumber.java.PendingException();
-	}
+	public void click_on_save_button_to_save_general_information_values() throws InterruptedException {
+		CompanySettingsPage companysettings = new CompanySettingsPage(driver, logger);
+		companysettings.saveDataGeneralInformation();
+	Thread.sleep(5000);
 
+}
 }

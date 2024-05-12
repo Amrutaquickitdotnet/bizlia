@@ -196,7 +196,7 @@ public class CommonActions {
 		Date d = new Date();
 		DateFormat ft = new SimpleDateFormat("ddMMyyyyhhmmss");
 		String fileName = ft.format(d);
-		String path = System.getProperty("user.dir") + "/src/test/java/com/cdm/reports/screenshot/" + fileName + ".png";
+		String path = System.getProperty("user.dir") + "/src/test/java/com/bizliaScreenshot" + fileName + ".png";
 		TakesScreenshot ts = ((TakesScreenshot) driver);
 		File SrcFile = ts.getScreenshotAs(OutputType.FILE);
 		// Move image file to new destination
@@ -319,12 +319,20 @@ public class CommonActions {
 			e.printStackTrace();
 		}
 	}
-	public void setDropDownElementByVisibleText(WebElement dropdownEle, String text) {
+	public void setDropDownElementByVisibleText(WebElement dropdownEle, String text,String msg) {
+		try {
 		Select s = new Select(dropdownEle);
 		s.selectByVisibleText(text);
+		logger.pass(msg + "<span class='label end-time'><a href=" + getScreenshot() + ">Screenshot</a></span>");
+	} catch (Exception e) {
+		System.out.println(e.getMessage());
+		logger.fail("Step failed due to " + e.getMessage() + "<span class='label end-time'><a href="
+				+ getScreenshot() + ">Screenshot</a></span>");
+	
+	}
 	}
 
-	public void Selectdropdown(WebElement ele, String text) throws InterruptedException {
+	public void Selectdropdownoptions(WebElement ele, String text) throws InterruptedException {
 		ele.click();
 		Thread.sleep(10);
 		String xpath = "//option(@value,'" + text + "')]";
