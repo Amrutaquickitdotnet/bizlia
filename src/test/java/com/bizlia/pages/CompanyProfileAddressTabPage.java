@@ -96,37 +96,37 @@ public class CompanyProfileAddressTabPage extends CommonActions {
 	WebElement mailingState;
 
 
-	public void clickingonAddressTab() {
+	public void setClickingonAddressTab() {
 		clickElement(addressesTab, "When clicking on addresses tab from company profile");
 
 	}
 
-	public void ownerinformationFullName(String value) {
-		SetInput(ownerInformationfullName, value, "Entering full name under Owner's information");
+	public void setOwnerinformationFullName(String value) {
+		setInput(ownerInformationfullName, value, "Entering full name under Owner's information");
 	}
 
-	public void ownerinformationTitle(String value) {
-		SetInput(ownerTitle, value, "Entering Title under Owner's information");
+	public void setOwnerinformationTitle(String value) {
+		setInput(ownerTitle, value, "Entering Title under Owner's information");
 	}
 
-	public void ownerinformationAddressOne(String value) {
-		SetInput(owneraddressLineOne, value, "Entering details of address one inside Owner's information");
+	public void setOwnerinformationAddressOne(String value) {
+		setInput(owneraddressLineOne, value, "Entering details of address one inside Owner's information");
 	}
 
-	public void ownerinformationAddressTwo(String value) {
-		SetInput(owneraddressLineTwo, value, "Entering details of address two  under Owner's information");
+	public void setOwnerinformationAddressTwo(String value) {
+		setInput(owneraddressLineTwo, value, "Entering details of address two  under Owner's information");
 	}
 
-	public void ownerinformationCity(String value) {
-		SetInput(ownercity, value, "Entering city under Owner's information");
+	public void setOwnerinformationCity(String value) {
+		setInput(ownercity, value, "Entering city under Owner's information");
 	}
 
-	public void ownerinformationState(String value) {
-		SetInput(ownerstate, value, "Entering state under Owner's information");
+	public void setOwnerinformationState(String value) {
+		setInput(ownerstate, value, "Entering state under Owner's information");
 	}
 
-	public void ownerinformationZipCode(String value) {
-		SetInput(ownerZipcode, value, "Entering zip code value under Owner's information");
+	public void setOwnerinformationZipCode(String value) {
+		setInput(ownerZipcode, value, "Entering zip code value under Owner's information");
 	}
 
 }

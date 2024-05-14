@@ -50,7 +50,7 @@ public class CommonActions {
 	}
 
 	
-	public void SetInput(WebElement elm, char data) {
+	public void setInput(WebElement elm, char data) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(elm));
@@ -66,7 +66,7 @@ public class CommonActions {
 		}
 	}
 
-	public void SetInput(WebElement elm, char data, String msg) {
+	public void setInput(WebElement elm, char data, String msg) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(elm));
@@ -82,7 +82,7 @@ public class CommonActions {
 		}
 	}
 
-	public void SetInput(WebElement elm, String data, String msg) {
+	public void setInput(WebElement elm, String data, String msg) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(elm));
@@ -96,7 +96,7 @@ public class CommonActions {
 		}
 	}
 
-	public void SetInput(By elm, String data, String msg) {
+	public void setInput(By elm, String data, String msg) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(elm));
@@ -110,7 +110,7 @@ public class CommonActions {
 		}
 	}
 
-	public void SetInput(String elm, String data, String msg) {
+	public void setInput(String elm, String data, String msg) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(elm))));
@@ -123,6 +123,8 @@ public class CommonActions {
 					+ getScreenshot() + ">Screenshot</a></span>");
 		}
 	}
+	
+	
 
 	public void clickElement(WebElement elm, String msg) {
 		try {
@@ -323,7 +325,7 @@ public class CommonActions {
 		try {
 		Select s = new Select(dropdownEle);
 		s.selectByVisibleText(text);
-		logger.pass(msg + "<span class='label end-time'><a href=" + getScreenshot() + ">Screenshot</a></span>");
+		logger.pass(msg + "<span 	class='label end-time'><a href=" + getScreenshot() + ">Screenshot</a></span>");
 	} catch (Exception e) {
 		System.out.println(e.getMessage());
 		logger.fail("Step failed due to " + e.getMessage() + "<span class='label end-time'><a href="

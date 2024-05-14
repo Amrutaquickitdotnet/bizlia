@@ -42,7 +42,7 @@ public class Common extends BaseTest {
 		// logger.addScreenCaptureFromBase64String(tagName);
 		extent.flush();
 		driver.close();
-		driver.quit();
+		driver.quit();		
 		driver=null;
 	}
 

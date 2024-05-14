@@ -29,7 +29,7 @@ public class LegalBusinessSignupPage extends CommonActions {
 	WebElement btnSubmitButton;
 	
 	public void setOrgName(String value) {
-		SetInput(organizationName,value,"");
+		setInput(organizationName,value,"");
 	}
 	
 	public void setOrgSubmit() {

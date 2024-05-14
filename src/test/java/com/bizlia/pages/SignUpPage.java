@@ -60,33 +60,33 @@ public class SignUpPage extends CommonActions {
 
 	public void enterfirstName(String value) {
 
-		SetInput(firstName, value, "firstName when value is :" + value);
+		setInput(firstName, value, "firstName when value is :" + value);
 	}
 
 	public void enterLastName(String value) {
 
-		SetInput(lastName, value, "lastName when value is :" + value);
+		setInput(lastName, value, "lastName when value is :" + value);
 
 	}
 
 	public void enterEmail(String value) {
 
-		SetInput(emailAddress, value, "emailaddress when value is :" + value);
+		setInput(emailAddress, value, "emailaddress when value is :" + value);
 	}
 
 	public void phoneentry(String value) {
-		SetInput(phonefield, value, "Error in phonefield when value is :" + value);
+		setInput(phonefield, value, "Error in phonefield when value is :" + value);
 
 	}
 
 	public void passwordentry(String value) {
 
-		SetInput(password, value, "password when value is :" + value);
+		setInput(password, value, "password when value is :" + value);
 	}
 
 	public void confirmPassword(String value) {
 
-		SetInput(confirmpassword, value, "confirmpassword when value is :" + value);
+		setInput(confirmpassword, value, "confirmpassword when value is :" + value);
 
 	}
 

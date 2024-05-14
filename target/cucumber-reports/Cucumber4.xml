@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="128.573" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="COMPANYSERVICES" name="TC01_Verification of company services tab under Company Profile page" time="127.755">
-<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;String.length()&quot; because &quot;phoneCode&quot; is null">
-<![CDATA[java.lang.NullPointerException: Cannot invoke "String.length()" because "phoneCode" is null
-	at com.bizlia.pages.PhoneVerificationLoginPage.setPhoneCode(PhoneVerificationLoginPage.java:27)
-	at com.bizlia.Stepdefinations.LoginSteps.after_verification_of_email_user_should_be_redirect_on_phone_authentication_code(LoginSteps.java:48)
-	at ✽.after verification of email user should be redirect on phone authentication code(file:///E:/Bizlia/BizLia/src/test/resources/Features/CompanyServices.feature:11)
-]]>
-</failure>
+<testsuite name="Cucumber" time="72.616" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="COMPANYSERVICES" name="TC01_Verification of company services tab under Company Profile page" time="72.245">
 <system-out><![CDATA[
 Given User launch application in chrome browser.............................passed
 When User click on login button from top navigation menu then should land on login page.passed
 When User enters Email Address and password.................................passed
 And click on the checkbox given for bot I am not robot......................passed
 Then click on the Login button..............................................passed
-Then after verification of email user should be redirect on phone authentication code.failed
-Then click on the company setting arrow placed at the left hand side navigation.skipped
-Then click on company profile link from left hand side navigation menu under company settings page.skipped
-Then click on the services tab..............................................skipped
-Then enter the details for the Brief Description of Business................skipped
-Then enter the details for the Primary NAICs Codes..........................skipped
-Then enter the details for the Secondary NAICs Codes........................skipped
+Then after verification of email user should be redirect on phone authentication code.passed
+Then click on the company setting arrow placed at the left hand side navigation.passed
+Then click on company profile link from left hand side navigation menu under company settings page.passed
+Then click on the services tab..............................................passed
+Then enter the details for the Brief Description of Business................passed
+Then enter the details for the Primary NAICs Codes..........................passed
+Then enter the details for the Secondary NAICs Codes........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

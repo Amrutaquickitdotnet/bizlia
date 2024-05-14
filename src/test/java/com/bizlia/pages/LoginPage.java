@@ -34,12 +34,12 @@ public class LoginPage extends CommonActions {
 
 	public void enterEmailElement(String value) {
 
-		SetInput(emailElement, value, "When email is entered:" + value);
+		setInput(emailElement, value, "When email is entered:" + value);
 	}
 
 	public void enterPasswordElement(String value) {
 
-		SetInput(passwordElement, value, "when password is entered :" + value);
+		setInput(passwordElement, value, "when password is entered :" + value);
 
 	}
 	

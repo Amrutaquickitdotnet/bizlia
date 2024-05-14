@@ -137,23 +137,23 @@ public class CompanySettingsPage extends CommonActions {
 	}
 
 	public void doingBusinessAs(String value) {
-		SetInput(companydoingbusiness, value, "Entering details under doing business as");
+		setInput(companydoingbusiness, value, "Entering details under doing business as");
 	}
 
 	public void formercompanyname(String value) {
-		SetInput(formerCompanyName, value, "Entering details under formercompanyname field");
+		setInput(formerCompanyName, value, "Entering details under formercompanyname field");
 	}
 
 	public void federalTaxId(String value) {
-		SetInput(federalTaxId, value, "Entering details under federalTaxId field");
+		setInput(federalTaxId, value, "Entering details under federalTaxId field");
 	}
 
 	public void websiteAddress(String value) {
-		SetInput(WebsiteUrl, value, "Entering Website Address");
+		setInput(WebsiteUrl, value, "Entering Website Address");
 	}
 
 	public void howDidYouHearAboutUs(String value) {
-		SetInput(howDidYouHear, value, "Entering text for How did you hear about us ?");
+		setInput(howDidYouHear, value, "Entering text for How did you hear about us ?");
 	}
 
 	public void selectStateIncorporate(String state) {
@@ -176,31 +176,31 @@ public class CompanySettingsPage extends CommonActions {
 	}
 
 	public void ownerinformationFullName(String value) {
-		SetInput(ownerInformationfullName, value, "Entering full name under Owner's information");
+		setInput(ownerInformationfullName, value, "Entering full name under Owner's information");
 	}
 
 	public void ownerinformationTitle(String value) {
-		SetInput(ownerTitle, value, "Entering Title under Owner's information");
+		setInput(ownerTitle, value, "Entering Title under Owner's information");
 	}
 
 	public void ownerinformationAddressOne(String value) {
-		SetInput(owneraddressLineOne, value, "Entering details of address one inside Owner's information");
+		setInput(owneraddressLineOne, value, "Entering details of address one inside Owner's information");
 	}
 
 	public void ownerinformationAddressTwo(String value) {
-		SetInput(owneraddressLineTwo, value, "Entering details of address two  under Owner's information");
+		setInput(owneraddressLineTwo, value, "Entering details of address two  under Owner's information");
 	}
 
 	public void ownerinformationCity(String value) {
-		SetInput(ownercity, value, "Entering city under Owner's information");
+		setInput(ownercity, value, "Entering city under Owner's information");
 	}
 
 	public void ownerinformationState(String value) {
-		SetInput(ownerstate, value, "Entering state under Owner's information");
+		setInput(ownerstate, value, "Entering state under Owner's information");
 	}
 
 	public void ownerinformationZipCode(String value) {
-		SetInput(ownerZipcode, value, "Entering zip code value under Owner's information");
+		setInput(ownerZipcode, value, "Entering zip code value under Owner's information");
 	}
 
 }
